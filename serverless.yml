@@ -1,0 +1,21 @@
+service: backend
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  profile: nadtakan
+
+package:
+  include:
+    - node_modules/**
+
+functions:
+  display:
+    handler: src/handler.display
+    events:
+      - http:
+          path: /display
+          method: get
+          cors: true #enble CORS
+  
+  

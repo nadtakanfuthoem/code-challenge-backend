@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "deploy": "sls deploy -v"
+  },
+  "author": "Nadtakan Jones",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.668.0",
+    "fs": "0.0.1-security"
+  },
+  "devDependencies": {
+    "jest": "^26.0.0"
+  }
+}
